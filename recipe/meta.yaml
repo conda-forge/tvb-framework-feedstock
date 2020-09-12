@@ -60,7 +60,7 @@ test:
     - pytest-mock
     - beautifulsoup4
   commands:
-    - pytest --pyargs tvb.tests.framework.interfaces.web.controllers.burst_controller_test
+    - pytest --pyargs tvb.tests.framework
 
 about:
   home: http://www.thevirtualbrain.com/
