@@ -1,6 +1,6 @@
 {% set name = "tvb-framework" %}
-{% set version = "2.7.3" %}
-{% set sha256 = "9071aa4978747be59305caccfad636f61e0baed2deee59d08a87a24b0b77d8fb" %}
+{% set version = "2.7.3.1" %}
+{% set sha256 = "e1de0df0b8f43a317962b066790a5d724e1e6ae98ee124ad8b977f92aa228877" %}
 
 package:
   name: {{ name }}
