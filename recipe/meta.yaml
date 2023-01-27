@@ -1,6 +1,6 @@
 {% set name = "tvb-framework" %}
-{% set version = "2.7.3" %}
-{% set sha256 = "9071aa4978747be59305caccfad636f61e0baed2deee59d08a87a24b0b77d8fb" %}
+{% set version = "2.7.3.1" %}
+{% set sha256 = "e1de0df0b8f43a317962b066790a5d724e1e6ae98ee124ad8b977f92aa228877" %}
 
 package:
   name: {{ name }}
@@ -45,7 +45,7 @@ requirements:
     - scipy
     - simplejson
     - six
-    - sqlalchemy
+    - sqlalchemy <2.0
     - tvb-library
     - tvb-gdist
     - tvb-storage
@@ -68,7 +68,7 @@ test:
     - pip install requests-toolbelt pynrrd simpleitk wget
     - pip install allensdk --no-deps
     - pip install bctpy siibra xarray
-    - python -m wget -o tvb_data.zip https://zenodo.org/record/4263723/files/tvb_data.zip?download=1
+    - python -m wget -o tvb_data.zip https://zenodo.org/record/7574266/files/tvb_data.zip?download=1
     - python -m zipfile -e tvb_data.zip tvb_data
     - cd tvb_data
     - python setup.py develop
