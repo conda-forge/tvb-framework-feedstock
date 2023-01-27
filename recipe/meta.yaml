@@ -45,7 +45,7 @@ requirements:
     - scipy
     - simplejson
     - six
-    - sqlalchemy
+    - sqlalchemy < 2.0
     - tvb-library
     - tvb-gdist
     - tvb-storage
