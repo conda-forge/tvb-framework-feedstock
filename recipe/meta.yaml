@@ -1,6 +1,6 @@
 {% set name = "tvb-framework" %}
-{% set version = "2.7.3.1" %}
-{% set sha256 = "e1de0df0b8f43a317962b066790a5d724e1e6ae98ee124ad8b977f92aa228877" %}
+{% set version = "2.8.1" %}
+{% set sha256 = "3047a9bf1c88899f5e6b0472085100c1eed98fb6f4282d30167d9537dfd4f863" %}
 
 package:
   name: {{ name }}
@@ -66,8 +66,7 @@ test:
 
   commands:
     - pip install requests-toolbelt pynrrd simpleitk wget
-    - pip install allensdk --no-deps
-    - pip install bctpy siibra xarray
+    - pip install bctpy siibra==0.4a35 xarray
     - python -m wget -o tvb_data.zip https://zenodo.org/record/7574266/files/tvb_data.zip?download=1
     - python -m zipfile -e tvb_data.zip tvb_data
     - cd tvb_data
