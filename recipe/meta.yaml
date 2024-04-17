@@ -45,12 +45,12 @@ requirements:
     - scipy
     - simplejson
     - six
-    - sqlalchemy <2.0
+    - sqlalchemy
     - tvb-library
     - tvb-gdist
     - tvb-storage
-    - werkzeug 2.1.2
-    - matplotlib 3.5.3
+    - werkzeug 
+    - matplotlib 
     - psycopg2
     - docutils
     - gevent
@@ -66,8 +66,8 @@ test:
 
   commands:
     - pip install requests-toolbelt pynrrd simpleitk wget
-    - pip install bctpy siibra==0.4a35 xarray
-    - python -m wget -o tvb_data.zip https://zenodo.org/record/7574266/files/tvb_data.zip?download=1
+    - pip install bctpy siibra xarray
+    - python -m wget -o tvb_data.zip https://zenodo.org/record/10128131/files/tvb_data.zip?download=1
     - python -m zipfile -e tvb_data.zip tvb_data
     - cd tvb_data
     - python setup.py develop
