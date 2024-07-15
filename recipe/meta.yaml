@@ -25,7 +25,7 @@ requirements:
     - alembic
     - cherrypy
     - cryptography
-    - flask > 3.0
+    - flask >3.0
     - flask-restx >=1.3.0
     - formencode
     - h5py
