@@ -1,6 +1,6 @@
 {% set name = "tvb-framework" %}
-{% set version = "2.8.2" %}
-{% set sha256 = "00f4bdfc9faccf2df1a95695e231d7d4890cbf5ca7eac0474d52b976a51d91d5" %}
+{% set version = "2.9" %}
+{% set sha256 = "44f102bcfd63a09c9c2af662a004415f2fc64847c0376218011b27fd2bb03848" %}
 
 package:
   name: {{ name }}
@@ -26,7 +26,7 @@ requirements:
     - cherrypy
     - cryptography
     - flask
-    - flask-restx
+    - flask-restx >=1.3.0
     - formencode
     - h5py
     - Jinja2
@@ -42,18 +42,19 @@ requirements:
     - pytest-mock
     - requests
     - scikit-learn
-    - scipy
+    - scipy <1.14
     - simplejson
     - six
-    - sqlalchemy <2.0
+    - sqlalchemy
     - tvb-library
     - tvb-gdist
     - tvb-storage
-    - werkzeug 2.1.2
-    - matplotlib 3.5.3
+    - werkzeug 
+    - matplotlib 
     - psycopg2
     - docutils
     - gevent
+    - bctpy
 
 test:
   requires:
@@ -66,8 +67,8 @@ test:
 
   commands:
     - pip install requests-toolbelt pynrrd simpleitk wget
-    - pip install bctpy siibra==0.4a35 xarray
-    - python -m wget -o tvb_data.zip https://zenodo.org/record/7574266/files/tvb_data.zip?download=1
+    - pip install bctpy siibra==1.0a11 xarray
+    - python -m wget -o tvb_data.zip https://zenodo.org/record/10128131/files/tvb_data.zip?download=1
     - python -m zipfile -e tvb_data.zip tvb_data
     - cd tvb_data
     - python setup.py develop
@@ -99,3 +100,4 @@ extra:
   recipe-maintainers:
     - liadomide
     - popaula937
+    - AdrianValentinCiu
