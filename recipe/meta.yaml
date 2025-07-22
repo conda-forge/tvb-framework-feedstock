@@ -1,13 +1,13 @@
 {% set name = "tvb-framework" %}
-{% set version = "2.9.1" %}
-{% set sha256 = "d69d29548c24cdcaeff7a25122dad95f3ff5a5e40a924558b2835448d14b174b" %}
+{% set version = "2.10.0" %}
+{% set sha256 = "02dcb79a0c83c7a9f3ce69eaa17ca2f7136b3e0de17b58e90eb679cf889c2422" %}
 
 package:
   name: {{ name }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
