@@ -46,7 +46,7 @@ requirements:
     - simplejson
     - six
     - sqlalchemy
-    - tvb-library
+    - tvb-library>2.9.2
     - tvb-gdist
     - tvb-storage
     - werkzeug
