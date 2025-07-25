@@ -11,7 +11,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
@@ -42,11 +42,11 @@ requirements:
     - pytest-mock
     - requests
     - scikit-learn
-    - scipy <1.14
+    - scipy
     - simplejson
     - six
     - sqlalchemy
-    - tvb-library >2.9.2
+    - tvb-library >=2.10.0
     - tvb-gdist
     - tvb-storage
     - werkzeug
