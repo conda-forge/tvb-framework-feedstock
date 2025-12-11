@@ -55,6 +55,7 @@ requirements:
     - docutils
     - gevent
     - bctpy
+    - scikit-image # For siibra
 
 test:
   requires:
