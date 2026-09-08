@@ -56,6 +56,7 @@ requirements:
     - gevent
     - bctpy
     - scikit-image # For siibra
+    - decorator
 
 test:
   requires:
