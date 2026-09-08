@@ -46,11 +46,11 @@ requirements:
     - simplejson
     - six
     - sqlalchemy
-    - tvb-library >=2.10.0
+    - tvb-library
     - tvb-gdist
     - tvb-storage
     - werkzeug
-    - matplotlib
+    - matplotlib-base
     - psycopg2
     - docutils
     - gevent
